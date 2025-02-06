@@ -46,3 +46,19 @@ function startTimer() {
         }, 1000);
     }
 }
+
+function handleTimerEnd() {
+    countdown = 0;
+    playPauseElement.style.display = "none";
+    bellSound.play();
+    updateDisplay(0);
+    updateInnerCircle(0);
+
+    setTimeout(() => {
+        resetTimer(POTTER);
+        currentDuration = POTTER; 
+        countdown = POTTER; 
+        isPaused = true;
+        playPauseElement.textContent = "Play";
+      }, 5000);
+    }
