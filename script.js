@@ -127,11 +127,19 @@ function handleTimerEnd() {
       }
       
       window.onload = function() {
-        const savedBackground = localStorage.getItem("selectedBackground");
-        if (savedBackground) {
-          setBackgroundVideo(savedBackground); // Set the saved background video if it exists
-          backgroundSelect.value = savedBackground; // Optional: Update the select dropdown with the saved video
+        const videoElement = document.getElementById("backgroundVideo");
+
+        if (!localStorage.getItem('hasVisited')) {
+          videoElement.src = 'videos/hogwarts.mp4';
+          localStorage.setItem('hasVisited', 'true');
+        } else {
+          const savedBackground = localStorage.getItem('selectedBackground');
+          if (savedBackground) {
+            videoElement.src = `videos/${savedBackground}.mp4`;
+          }
         }
-      }
+
+        backgroundSelect.value = "hogwarts";
+      };
 
       resetTimer(POTTER);
