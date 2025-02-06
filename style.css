@@ -79,3 +79,16 @@ body {
 a {
     text-decoration: none;
 }
+
+.circle {
+    position: relative;
+    width: 350px;
+    aspect-ratio: 1/1;
+}
+
+.inner-circle {
+    position: absolute;
+    inset: 2%;
+    width: 96%;
+    height: 96%;
+}
