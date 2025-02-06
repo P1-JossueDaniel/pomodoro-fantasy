@@ -206,3 +206,9 @@ a {
       width: 100%; 
     }
   }
+
+  @media (max-height: 476px) {
+    body {
+      overflow: auto;
+    }
+  }
