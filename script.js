@@ -142,14 +142,4 @@ function handleTimerEnd() {
         backgroundSelect.value = "hogwarts";
       };
 
-document.getElementById('contactLink').addEventListener('click', function() {
-  history.pushState({ page: 'contact' }, 'Contact', '/contact');
-});
-
-window.onpopstate = function(event) {
-  if (event.state && event.state.page === 'contact') {
-    resetTimer(POTTER);
-  }
-};
-
       resetTimer(POTTER);
