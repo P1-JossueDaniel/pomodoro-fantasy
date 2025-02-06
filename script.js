@@ -20,3 +20,29 @@ let isPaused = true;
 let isStarted = false;
 let endTime;
 let pausedTimeRemaining;
+
+function startTimer() {
+    if (!isStarted) {
+        isStarted = true;
+        endTime =Date.now() + countdown * 1000;
+
+        timer = setInterval(() => {
+            if (!isPaused) {
+                const currentTime = Date.now();
+                const remainingTime = Math.ceil((endTime - currentTime) / 1000);
+
+                if (remainingTime <=0) {
+                    clearInterval(timer);
+                    handleTimerEnd();
+                    return;
+                }
+
+                countdown = remainingTime;
+                updateDisplay(countdown);
+
+                const progress = (countdown / currentDuration) * 360;
+                updateInnerCircle(progress);
+            }
+        }, 1000);
+    }
+}
