@@ -92,3 +92,33 @@ a {
     width: 96%;
     height: 96%;
 }
+
+.countdown {
+    position: absolute;
+    inset: 0;
+    width: 94%;
+    height: 94%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.countdown h1 {
+    font-size: 5rem;
+    color: var(--font-clr);
+    z-index: 5;
+}
+
+.play-pause {
+    font-size: 2rem;
+    color: var(--font-clr);
+    margin-top: 20px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.play-pause:hover {
+    color: aqua;
+}
