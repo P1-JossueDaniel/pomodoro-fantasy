@@ -12,3 +12,11 @@ const backgroundVideo = document.getElementById("backgroundVideo");
 
 const buttonSound = new Audio("sound/button.mp3");
 const bellSound = new Audio("sound/bell.mp3");
+
+let timer;
+let countdown;
+let currentDuration;
+let isPaused = true;
+let isStarted = false;
+let endTime;
+let pausedTimeRemaining;
