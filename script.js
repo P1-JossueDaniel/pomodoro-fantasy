@@ -114,3 +114,24 @@ function handleTimerEnd() {
           startTimer();
         }
       });
+
+      backgroundSelect.addEventListener("change", () => {
+        const selectedBackground = backgroundSelect.value;
+        setBackgroundVideo(selectedBackground);
+        localStorage.setItem("selectedBackground", selectedBackground); // Save the selected background video to localStorage
+      });
+
+      function setBackgroundVideo(selectedBackground) {
+        const videoPath = `videos/${selectedBackground}.mp4`;
+        backgroundVideo.src = videoPath;
+      }
+      
+      window.onload = function() {
+        const savedBackground = localStorage.getItem("selectedBackground");
+        if (savedBackground) {
+          setBackgroundVideo(savedBackground); // Set the saved background video if it exists
+          backgroundSelect.value = savedBackground; // Optional: Update the select dropdown with the saved video
+        }
+      }
+
+      resetTimer(POTTER);
