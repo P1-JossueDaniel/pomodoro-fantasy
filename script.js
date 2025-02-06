@@ -68,3 +68,23 @@ function handleTimerEnd() {
         const seconds = timeInSeconds % 60;
         countdownElement.textContent = `${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
       }
+
+      function updateInnerCircle(progress) {
+        innerCircle.style.background = `conic-gradient(transparent ${progress}deg, transparent 0%)`;
+      }
+
+      function resetTimer(duration) {
+        clearInterval(timer);
+        isStarted = false;
+        isPaused = true;
+      
+        countdown = duration;
+        currentDuration = duration;
+      
+        updateDisplay(duration);
+      
+        playPauseElement.style.display = "block";
+        playPauseElement.textContent = "Play";
+      
+        innerCircle.style.background = `conic-gradient(transparent 360deg, transparent 0%)`;
+      }
