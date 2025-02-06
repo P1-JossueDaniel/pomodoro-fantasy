@@ -62,3 +62,9 @@ function handleTimerEnd() {
         playPauseElement.textContent = "Play";
       }, 5000);
     }
+
+    function updateDisplay(timeInSeconds) {
+        const minutes = Math.floor(timeInSeconds / 60);
+        const seconds = timeInSeconds % 60;
+        countdownElement.textContent = `${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
+      }
