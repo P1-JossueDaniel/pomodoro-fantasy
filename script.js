@@ -88,3 +88,29 @@ function handleTimerEnd() {
       
         innerCircle.style.background = `conic-gradient(transparent 360deg, transparent 0%)`;
       }
+
+      timerButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          timerButtons.forEach((btn) => btn.classList.remove("active"));
+          button.classList.add("active");
+      
+          const newDuration = parseInt(button.dataset.time);
+          resetTimer(newDuration);
+        });
+      });
+
+      playPauseElement.addEventListener("click", () => {
+        buttonSound.play();
+        isPaused = !isPaused;
+        playPauseElement.textContent = isPaused ? "Play" : "Pause";
+      
+        if (isPaused) {
+          pausedTimeRemaining = Math.ceil((endTime - Date.now()) / 1000);
+        } else {
+          endTime = Date.now() + pausedTimeRemaining * 1000;
+        }
+      
+        if (!isStarted) {
+          startTimer();
+        }
+      });
