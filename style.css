@@ -128,7 +128,15 @@ a {
     font-size: 1rem;
   }
   
-  .email:hover {
+  .email-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .email-button:hover {
     color: aqua;
   }
 
