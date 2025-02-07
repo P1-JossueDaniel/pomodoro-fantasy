@@ -142,4 +142,13 @@ function handleTimerEnd() {
         backgroundSelect.value = "hogwarts";
       };
 
+      document.getElementById("email-button").addEventListener("click", function() {
+        var user = "pomodorofantasy";
+        var domain = "gmail.com";
+        var email = user + "@" + domain;
+      
+        // Open the default email client
+        window.location.href = "mailto:" + email;
+      });
+
       resetTimer(POTTER);
