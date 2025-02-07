@@ -10,7 +10,7 @@
 - **Short Break**: 5 minutes for a quick break.
 - **Long Break**: 15 minutes for a longer break.
 - **Play and Pause**: Easily control the timer with a play/pause button to start and stop the countdown.
-- **Contact Us**: A button that links to a contact form on a subpage, allowing users to get in touch with the developers.
+- **Email Us**: A button that opens the user's default email client, allowing them to send an email directly to the developers.
 
 ## Tech Stack
 
@@ -22,7 +22,7 @@ This project was built using vanilla HTML, CSS, and JavaScript as part of the le
 
 ## Contributions
 
-This is a learning project, and the author took inspiration from several YouTube tutorials while coding the vanilla JavaScript. If you notice any errors or areas for improvement, please feel free to leave a comment or suggestion in the repository. The author will appreciate any help and feedback as they continue to learn and grow in their programming journey.
+This is a learning project, and the author took inspiration from several tutorials and coding websites while coding the vanilla JavaScript. If you notice any errors or areas for improvement, please feel free to leave a comment or suggestion in the repository. The author will appreciate any help and feedback as they continue to learn and grow in their programming journey.
 
 ## Getting Started
 
