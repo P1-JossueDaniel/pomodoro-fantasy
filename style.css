@@ -31,6 +31,10 @@
     font-weight: 600;
 }
 
+#backgroundSelect {
+    font-size: 1.2rem;
+  }
+
 #backgroundVideo {
     position: fixed;
     top: 0;
