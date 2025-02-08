@@ -33,6 +33,20 @@
 
 #backgroundSelect {
     font-size: 1.2rem;
+    padding: 10px 20px;  
+    background-color: #013030; 
+    opacity: 60%;
+    color: white; 
+    border-radius: 39px; 
+    border: 4px solid #12879c; 
+    appearance: none; 
+    cursor: pointer; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  #backgroundSelect:focus {
+    outline: none; 
+    box-shadow: 0 0 5px rgba(0, 150, 136, 0.8); 
   }
 
 #backgroundVideo {
