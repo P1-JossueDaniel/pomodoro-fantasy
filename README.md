@@ -22,7 +22,7 @@ This project was built using vanilla HTML, CSS, and JavaScript as part of the le
 
 ## Contributions
 
-This is a learning project, and the author took inspiration from several tutorials and coding websites while coding the vanilla JavaScript. If you notice any errors or areas for improvement, please feel free to leave a comment or suggestion in the repository. The author will appreciate any help and feedback as they continue to learn and grow in their programming journey. Steampunk video by Ideas in Motion and Yu Iwasaki from Pixabay.
+This is a learning project, and the author took inspiration from several tutorials and coding websites while coding the vanilla JavaScript. If you notice any errors or areas for improvement, please feel free to leave a comment or suggestion in the repository. The author will appreciate any help and feedback as they continue to learn and grow in their programming journey. Steampunk video by Ideas in Motion and Yu Iwasaki from Pixabay. Krishna Video by KRISHNENDU ADHIKARY from Pixabay.
 
 ## Getting Started
 
